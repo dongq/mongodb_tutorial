@@ -13,7 +13,7 @@ const server = async() => {
         if (!MONGO_URI) throw new Error("MONGO_URI is required!!")
 
         await mongoose.connect(MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false});
-        mongoose.set('debug', true)
+        //mongoose.set('debug', true)
         console.log('Mongodb connected')
         app.use(express.json())
        
