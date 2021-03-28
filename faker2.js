@@ -1,5 +1,5 @@
 const faker = require("faker");
-const { User } = require("./models");
+const { User } = require("./src/models");
 const axios = require("axios");
 const URI = "http://localhost:3000";
 
